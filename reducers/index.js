@@ -26,7 +26,6 @@ const initialItemState = {
 
 //TODO: action里的item undifined
 function itemReducers(state = initialItemState, action) {
-    console.log('action',action);
     var type = action.type;
     if (type == types.ADD_ITEM) {
         console.log('state.i',state.items,'action.i',action.item);

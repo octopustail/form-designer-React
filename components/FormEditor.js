@@ -24,7 +24,6 @@ class FormEditor extends Component {
         return (
             <div>
                 <ul>
-                    {console.log('items',this.props.items)}
                     {this.props.items.map((item, index) => {
                         return (<li key={index}>
                             <input type={item.type}/>

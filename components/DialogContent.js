@@ -12,7 +12,6 @@ class DialogContent extends Component {
     }
 
     onTypeChange(e) {
-        console.log('e.currentTarget.value',e.currentTarget.value)
         this.setState({
             type: e.currentTarget.value
         });
@@ -20,7 +19,6 @@ class DialogContent extends Component {
 
     onSubmit() {
         this.props.submitHandler(this.state);
-        console.log('this.state', this.state);
 
     }
 
